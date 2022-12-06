@@ -79,16 +79,8 @@ public class Main {
                 case 3: {
                     System.out.println("Enter the height");
                     int h = input.nextInt();
-                    int k =0;
-                    for (int i = 1; i <= h; ++i, k = 0) {
-                        for (int space = 1; space <= h - i; ++space) {
-                            System.out.print("  ");
-                        }
-                        while (k != 2 * i - 1) {
-                            System.out.print("* ");
-                            ++k;
-                        }
-                        System.out.println();
+                    for (int i = 1; i <= h; ++i) {
+                        System.out.println("  ".repeat(h-i) + "* ".repeat(2 * i - 1));
                     }
                 };
                 break;
