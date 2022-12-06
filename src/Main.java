@@ -24,6 +24,7 @@ public class Main {
                         for (int j = 1; j <= a; j ++){
                             System.out.print("*");
                         }
+                        System.out.println();
                     }
                 };
                 break;
@@ -43,8 +44,7 @@ public class Main {
                             for (int i = 1; i <= h; i++) {
                                 System.out.println("*".repeat(i));
                             }
-                        }
-                        ;
+                        };                        ;
                         break;
 
                         case 2: {
